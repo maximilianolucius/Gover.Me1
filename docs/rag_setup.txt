@@ -1,0 +1,410 @@
+# ================================
+# ARCHIVO: .env
+# ================================
+# Variables de entorno necesarias
+
+# OpenAI API Key (requerido para embeddings y LLM)
+OPENAI_API_KEY=NoLoNecesitas
+VLLM_BASE_URL=http://172.24.250.17:8000/v1
+VLLM_MODEL=gemma-3-12b-it
+
+# PostgreSQL Configuration
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=rag_chatbot
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=diganDar
+
+# Milvus Configuration
+MILVUS_HOST=localhost
+MILVUS_PORT=19530
+
+# ================================
+# ARCHIVO: docker-compose.yml
+# ================================
+# Solo PostgreSQL (Milvus se ejecuta con standalone_embed.sh)
+
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: rag_postgres
+    environment:
+      POSTGRES_DB: rag_chatbot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: diganDar
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+# ================================
+# ARCHIVO: setup_milvus.sh
+# ================================
+# Script para configurar Milvus usando standalone_embed.sh
+
+#!/bin/bash
+
+echo "🚀 Configurando Milvus con standalone_embed.sh..."
+
+# Descargar el script si no existe
+if [ ! -f "standalone_embed.sh" ]; then
+    echo "📥 Descargando standalone_embed.sh..."
+    curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+    chmod +x standalone_embed.sh
+fi
+
+# Verificar que el script se descargó correctamente
+if [ ! -f "standalone_embed.sh" ]; then
+    echo "❌ Error: No se pudo descargar standalone_embed.sh"
+    exit 1
+fi
+
+# Iniciar Milvus
+echo "🔧 Iniciando Milvus..."
+./standalone_embed.sh start
+
+# Verificar que Milvus esté corriendo
+echo "⏳ Esperando a que Milvus esté listo..."
+sleep 10
+
+# Test de conexión
+echo "🔍 Verificando conexión a Milvus..."
+if curl -s http://localhost:19530/health > /dev/null 2>&1; then
+    echo "✅ Milvus está ejecutándose correctamente en puerto 19530"
+else
+    echo "⚠️ Milvus puede estar iniciando aún. Verifica con: curl http://localhost:19530/health"
+fi
+
+echo "✨ Configuración de Milvus completada!"
+
+# ================================
+# ARCHIVO: setup_postgres.sh
+# ================================
+# Script alternativo para PostgreSQL sin Docker
+
+#!/bin/bash
+
+echo "🐘 Configurando PostgreSQL..."
+
+echo "📦 Instalando PostgreSQL localmente..."
+sudo apt update
+sudo apt install -y postgresql postgresql-contrib
+
+# Crear usuario y base de datos
+sudo -u postgres psql -c "CREATE USER rag_user WITH PASSWORD 'diganDar';"
+sudo -u postgres psql -c "CREATE DATABASE rag_chatbot OWNER rag_user;"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE rag_chatbot TO rag_user;"
+sudo -u postgres psql -c "ALTER ROLE postgres WITH PASSWORD 'diganDar';"
+
+echo "✅ PostgreSQL configurado localmente"
+echo "📝 Actualiza tu .env con:"
+echo "POSTGRES_HOST=localhost"
+echo "POSTGRES_USER=rag_user"
+echo "POSTGRES_PASSWORD=password123"
+
+
+# ================================
+# INSTRUCCIONES DE INSTALACIÓN ACTUALIZADAS
+# ================================
+
+# 1. Instalar dependencias de Python
+pip install -r requirements.txt
+
+# 2. Crear archivo .env con tus credenciales
+# Copia el contenido de arriba y modifica los valores
+
+# 3A. Configurar Milvus con standalone_embed.sh (método recomendado)
+chmod +x setup_milvus.sh
+./setup_milvus.sh
+
+# 3B. Configurar PostgreSQL
+# Opción A: Con Docker (recomendado)
+docker-compose up -d
+
+# Opción B: PostgreSQL local
+chmod +x setup_postgres.sh
+./setup_postgres.sh local
+
+# 4. Verificar que los servicios estén corriendo
+# Milvus
+curl http://localhost:19530/health
+
+# PostgreSQL
+docker-compose ps
+# o si es local:
+sudo systemctl status postgresql
+
+# 5. Ejecutar el chatbot
+
+# Opción A: Interfaz web con Streamlit
+streamlit run rag_chatbot.py
+
+# Opción B: Desde línea de comandos
+python rag_chatbot.py
+
+# ================================
+# INSTALACIÓN RÁPIDA (Un solo comando)
+# ================================
+
+#!/bin/bash
+# setup_all.sh - Script de instalación completa
+
+echo "🚀 Instalación completa del RAG Chatbot"
+
+# Crear directorio del proyecto
+mkdir -p rag_chatbot_project && cd rag_chatbot_project
+
+# Instalar dependencias Python
+echo "📦 Instalando dependencias de Python..."
+pip install langchain==0.1.0 langchain-community==0.0.10 langchain-openai==0.0.5 \
+            pymilvus==2.3.4 psycopg2-binary==2.9.9 python-dotenv==1.0.0 \
+            openai==1.6.1 tiktoken==0.5.2 streamlit==1.29.0
+
+# Configurar Milvus
+echo "🔧 Configurando Milvus..."
+curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+chmod +x standalone_embed.sh
+./standalone_embed.sh start
+
+# Configurar PostgreSQL con Docker
+echo "🐘 Configurando PostgreSQL..."
+cat > docker-compose.yml << 'EOL'
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: rag_postgres
+    environment:
+      POSTGRES_DB: rag_chatbot
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+volumes:
+  postgres_data:
+EOL
+
+docker-compose up -d
+
+# Crear archivo .env
+echo "⚙️ Configurando variables de entorno..."
+cat > .env << 'EOL'
+# OpenAI API Key (REQUERIDO - reemplaza con tu key)
+OPENAI_API_KEY=tu_api_key_aqui
+
+# PostgreSQL Configuration
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=rag_chatbot
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password123
+
+# Milvus Configuration (standalone_embed.sh usa estos valores por defecto)
+MILVUS_HOST=localhost
+MILVUS_PORT=19530
+EOL
+
+echo "✅ Instalación completada!"
+echo ""
+echo "📝 SIGUIENTE PASO:"
+echo "1. Edita el archivo .env y agrega tu OPENAI_API_KEY"
+echo "2. Ejecuta: streamlit run rag_chatbot.py"
+echo ""
+echo "🔍 Para verificar servicios:"
+echo "- Milvus: curl http://localhost:19530/health"
+echo "- PostgreSQL: docker-compose ps"
+
+# ================================
+# COMANDOS ÚTILES ACTUALIZADOS
+# ================================
+
+# === Gestión de Milvus (standalone_embed.sh) ===
+
+# Iniciar Milvus
+./standalone_embed.sh start
+
+# Detener Milvus
+./standalone_embed.sh stop
+
+# Reiniciar Milvus
+./standalone_embed.sh restart
+
+# Ver estado de Milvus
+./standalone_embed.sh status
+
+# Limpiar datos de Milvus (cuidado: borra todo)
+./standalone_embed.sh delete
+
+# Verificar health de Milvus
+curl http://localhost:19530/health
+
+# === Gestión de PostgreSQL ===
+
+# Iniciar PostgreSQL (Docker)
+docker-compose up -d postgres
+
+# Detener PostgreSQL
+docker-compose down
+
+# Ver logs de PostgreSQL
+docker-compose logs postgres
+
+# Reiniciar PostgreSQL
+docker-compose restart postgres
+
+# Conectar a PostgreSQL (línea de comandos)
+docker exec -it rag_postgres psql -U postgres -d rag_chatbot
+
+# === Gestión completa del sistema ===
+
+# Iniciar todo
+./standalone_embed.sh start && docker-compose up -d
+
+# Detener todo
+./standalone_embed.sh stop && docker-compose down
+
+# Estado completo del sistema
+echo "=== Milvus ===" && ./standalone_embed.sh status
+echo "=== PostgreSQL ===" && docker-compose ps
+
+# ================================
+# ESTRUCTURA DE ARCHIVOS ACTUALIZADA
+# ================================
+
+proyecto_rag/
+├── rag_chatbot.py              # Código principal
+├── rag_advanced_features.py    # Características avanzadas
+├── ejemplos_practicos.py       # Ejemplos de uso
+├── requirements.txt            # Dependencias Python
+├── .env                       # Variables de entorno
+├── docker-compose.yml         # Solo PostgreSQL
+├── setup_milvus.sh           # Script configuración Milvus
+├── setup_postgres.sh         # Script configuración PostgreSQL
+├── setup_all.sh              # Instalación completa
+├── standalone_embed.sh       # Script Milvus (descargado)
+├── docs/                     # Documentos JSON
+│   ├── noticia_1755299457_dad5704a.json
+│   └── dato_1755341730_adc7b996.json
+└── README.md                 # Documentación
+
+# ================================
+# EJEMPLO DE USO ACTUALIZADO
+# ================================
+
+# 1. Instalación rápida
+curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+chmod +x standalone_embed.sh
+./standalone_embed.sh start
+
+# 2. PostgreSQL con Docker
+docker run -d --name rag_postgres \
+  -e POSTGRES_DB=rag_chatbot \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=password123 \
+  -p 5432:5432 \
+  postgres:15
+
+# 3. Instalar dependencias y ejecutar
+pip install -r requirements.txt
+streamlit run rag_chatbot.py
+
+# ================================
+# TROUBLESHOOTING ACTUALIZADO
+# ================================
+
+# Si Milvus no inicia con standalone_embed.sh:
+# 1. Verificar permisos
+chmod +x standalone_embed.sh
+
+# 2. Verificar puertos disponibles
+netstat -tulpn | grep 19530
+
+# 3. Ver logs de Milvus
+./standalone_embed.sh status
+
+# 4. Reiniciar completamente
+./standalone_embed.sh delete
+./standalone_embed.sh start
+
+# Si hay problemas de memoria:
+# standalone_embed.sh requiere menos recursos que Docker Compose
+# pero aún necesita al menos 2GB de RAM disponible
+
+# Si PostgreSQL no conecta:
+# 1. Verificar que Docker esté corriendo
+docker ps | grep postgres
+
+# 2. Verificar puerto
+netstat -tulpn | grep 5432
+
+# 3. Verificar credenciales en .env
+cat .env | grep POSTGRES
+
+# Si OpenAI da error:
+# 1. Verificar API key en .env
+echo $OPENAI_API_KEY
+
+# 2. Verificar créditos en cuenta OpenAI
+# 3. Test de conexión
+python -c "import openai; print('OpenAI configurado correctamente')"
+
+# Para resetear completamente:
+./standalone_embed.sh delete  # Borra datos Milvus
+docker-compose down -v        # Borra datos PostgreSQL
+./standalone_embed.sh start   # Reinicia Milvus
+docker-compose up -d          # Reinicia PostgreSQL
+
+# ================================
+# MONITOREO Y MÉTRICAS ACTUALIZADAS
+# ================================
+
+# Acceso a interfaces web:
+# - Milvus Health: http://localhost:19530/health
+# - PostgreSQL: Usar pgAdmin o DBeaver en localhost:5432
+
+# Scripts de monitoreo
+cat > monitor.sh << 'EOL'
+#!/bin/bash
+echo "🔍 Estado del sistema RAG:"
+echo ""
+
+# Verificar Milvus
+echo "=== Milvus ==="
+if curl -s http://localhost:19530/health > /dev/null 2>&1; then
+    echo "✅ Milvus: FUNCIONANDO (puerto 19530)"
+else
+    echo "❌ Milvus: NO DISPONIBLE"
+fi
+
+# Verificar PostgreSQL
+echo ""
+echo "=== PostgreSQL ==="
+if docker ps | grep rag_postgres > /dev/null 2>&1; then
+    echo "✅ PostgreSQL: FUNCIONANDO (puerto 5432)"
+else
+    echo "❌ PostgreSQL: NO DISPONIBLE"
+fi
+
+# Verificar puertos
+echo ""
+echo "=== Puertos en uso ==="
+netstat -tulpn 2>/dev/null | grep -E ":19530|:5432" || echo "No se detectaron puertos RAG"
+
+echo ""
+echo "🏃 Para iniciar servicios:"
+echo "./standalone_embed.sh start && docker-compose up -d"
+EOL
+
+chmod +x monitor.sh
+
+# Uso del monitor
+./monitor.sh
