@@ -1,0 +1,17 @@
+[
+  {
+    "tema": "problemas_acceso_vivienda",
+    "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+    "sintesis": "No hay encuestas en la base de datos."
+  },
+  {
+    "tema": "viviendas_turisticas_andalucia",
+    "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+    "sintesis": "No hay encuestas en la base de datos."
+  },
+  {
+    "tema": "digitalizacion_andalucia",
+    "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+    "sintesis": "No hay encuestas en la base de datos."
+  }
+]

@@ -1,0 +1,716 @@
+{
+  "agent_id": "8G3toaZ2Tyu7HlUaWRO8",
+  "filter_date": "2025-08-25",
+  "total_conversations": 11,
+  "extraction_date": "2025-08-25T11:40:48.411260",
+  "processing_date": "2025-08-25T13:12:15.015698",
+  "llm_analysis_enabled": true,
+  "conversations": [
+    {
+      "conversation_id": "conv_2401k3ef2etffzdvx0nqws1jrvnz",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Ok, so fast. Hola, ¿qué tal estás?"
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días, gracias, muy bien, ¿y usted? Le llamo del Instituto Ibérico. Mi nombre es María Jesús. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad política?"
+        },
+        {
+          "role": "user",
+          "message": "Sí, por favor."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, muchas gracias. Para comenzar, ¿podría indicarme con qué género se identifica? Hombre, Mujer, o lo que prefiera indicar."
+        },
+        {
+          "role": "user",
+          "message": "Yo soy una mujer."
+        },
+        {
+          "role": "agent",
+          "message": "Gracias, muy bien. ¿Me podría indicar en qué rango de edad se encuentra? Dieciocho a treinta, treinta a cincuenta, cincuenta a sesenta o más de sesenta?"
+        },
+        {
+          "role": "user",
+          "message": "Yo tengo 25 años... A ver, tengo 24, pero ahora mismo... Sí, en dos meses voy a cumplir 25."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias por aclararlo. Entonces la marco en el rango de dieciocho a treinta. ¿Y actualmente cuál es su situación laboral? ¿Trabaja por cuenta ajena, por cuenta propia, está en búsqueda de empleo, estudia, o es jubilada?"
+        },
+        {
+          "role": "user",
+          "message": "Yo soy autónoma."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias. Para completar los datos demográficos, en términos generales, ¿se identificaría más con posiciones de izquierda, centro-izquierda, centro, centro-derecha o derecha? También puede indicar si prefiere no posicionarse."
+        },
+        {
+          "role": "user",
+          "message": "Yo creo que yo soy más del centro."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, muchas gracias. Vamos ya con las preguntas sobre actualidad. Primera cuestión: respecto al acceso a la vivienda, ¿puede enumerar todos los problemas que considera que existen actualmente? Puede mencionar tantos como quiera."
+        },
+        {
+          "role": "user",
+          "message": "Con la vivienda, a ver, yo creo que no hay suficiente vivienda que se puede permitir la gente joven."
+        },
+        {
+          "role": "agent",
+          "message": "Interesante, gracias por esa observación. Entiendo que su principal preocupación es la falta de viviendas asequibles para la gente joven. ¿Cree que hay otros factores que también influyen, por ejemplo los precios de alquiler, la dificultad para acceder a hipotecas, la especulación inmobiliaria, la oferta de vivienda pública, o la proliferación de viviendas turísticas? Puede mencionar los que piense."
+        },
+        {
+          "role": "user",
+          "message": "Yo creo que el gran problema es el alquiler."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, muy bien señalado. El alquiler es un problema clave según su experiencia. Para profundizar un poco, ¿qué aspectos del mercado del alquiler considera más problemáticos: los precios altos, contratos temporales y poca estabilidad, fianzas y condiciones abusivas, falta de regulación o control, o la escasez de oferta? Puede ir mencionando los que considere."
+        },
+        {
+          "role": "user",
+          "message": "Yo creo que el gran problema a lo mejor es el precio pero la segunda cosa que los dueños de los pisos piden muchos documentos y demasiado dinero para fianza."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, muchas gracias por compartirlo. Entonces, por un lado destaca el precio elevado del alquiler y, por otro, las exigencias administrativas y económicas de los arrendadores, como pedir demasiados documentos y fianzas altas. ¿Hay algún ejemplo concreto que haya vivido o que conozca que ilustre bien ese problema? ¿O le parece importante añadir algo más sobre las consecuencias que esto tiene para la gente joven?"
+        },
+        {
+          "role": "user",
+          "message": "No, no."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, muchas gracias por su sinceridad y por las aportaciones. Pasamos a la siguiente pregunta: respecto a la controversia sobre las viviendas turísticas en Andalucía, ¿qué opinión general tiene sobre este asunto? ¿Cree que son más un beneficio económico o más bien un problema para el acceso a la vivienda?..."
+        },
+        {
+          "role": "user",
+          "message": "Tengo..."
+        },
+        {
+          "role": "agent",
+          "message": "¿Tiene alguna duda o quiere que le dé un breve contexto sobre la controversia de las viviendas turísticas en Andalucía para ayudarle a posicionarse? Puedo resumirlo en unos segundos si prefiere. ¿Qué le viene a la mente al respecto?"
+        },
+        {
+          "role": "user",
+          "message": "Yo creo que no hay tantos problemas con los pisos turísticos, pero creo que tenía que haber un poco más de regulación para que gente no hace muchos pisos para el Airbnb."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, gracias por explicar su punto de vista. Entonces le queda claro que no considera que los pisos turísticos sean el principal problema, pero sí piensa que haría falta más regulación para evitar la proliferación descontrolada de alojamientos tipo Airbnb. ¿Podría decirme brevemente qué tipo de medidas regulatorias le parecerían adecuadas? Por ejemplo, límites por edificio o barrio, mayor control de licencias, impuestos más altos, o sanciones por uso fraudulento. ¿O prefiere no entrar en detalles?"
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "\"Con la vivienda, a ver, yo creo que no hay suficiente vivienda que se puede permitir la gente joven. Yo creo que el gran problema es el alquiler. Yo creo que el gran problema a lo mejor es el precio pero la segunda cosa que los dueños de los pisos piden muchos documentos y demasiado dinero para fianza.\"",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "\"Yo creo que no hay tantos problemas con los pisos turísticos, pero creo que tenía que haber un poco más de regulación para que gente no hace muchos pisos para el Airbnb.\"",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_7301k3edycd7fzqsdnv4t5sxd4da",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Hola, buenos días."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del..."
+        },
+        {
+          "role": "user",
+          "message": "Buenos días. Le llamo..."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María Jesús. ¿Hablo con un adulto mayor de edad?"
+        },
+        {
+          "role": "user",
+          "message": "Sí."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, muchas gracias. Estamos realizando una breve encuesta sobre temas de actualidad política. Sus respuestas son totalmente anónimas y nos ayudarán a comprender mejor la opinión pública. ¿Podría dedicarme unos cinco minutos?"
+        },
+        {
+          "role": "user",
+          "message": "Sí dime"
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Antes de empezar con las preguntas sobre temas de actualidad, necesitaría algunos datos básicos para clasificar estadísticamente sus respuestas. Para comenzar, ¿podría indicarme con qué género se identifica? (Hombre, Mujer, o lo que prefiera)"
+        },
+        {
+          "role": "user",
+          "message": "Soy pangénero"
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, gracias por decirlo. Anotaré \"pangénero\" en la casilla correspondiente. Ahora, ¿me podría indicar en qué rango de edad se encuentra? ¿Dieciocho a treinta, treinta a cincuenta, cincuenta a sesenta o más de sesenta?"
+        },
+        {
+          "role": "user",
+          "message": ". Tengo 37 años."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias. Entonces le marco en el rango treinta a cincuenta. ¿Y actualmente cuál es su situación laboral? ¿Trabaja por cuenta ajena, por cuenta propia, está en búsqueda de empleo, estudia, o es jubilado..."
+        },
+        {
+          "role": "user",
+          "message": "Soy empresario."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, lo marco como por cuenta propia. Y en términos generales, ¿con qué posición política se identifica más: izquierda, centro-izquierda, centro,..."
+        },
+        {
+          "role": "user",
+          "message": "Franquista."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo. Gracias por su sinceridad. Anotaré que se identifica con posiciones de derecha. Ahora pasamos a la primera pregunta temática. Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera."
+        },
+        {
+          "role": "user",
+          "message": "Pues mira, que la gente no tiene dinero, que está todo muy caro, que no para de haber pisos que digamos que son solo para extranjeros y bueno, es todo bastante complicado para los jóvenes porque su relación salario versus precio de los pisos es altísima en muchas ciudades."
+        },
+        {
+          "role": "agent",
+          "message": "Interesante, gracias por esa explicación. Ha mencionado la falta de dinero, los precios muy altos, la presencia de pisos destinados a turistas o extranjeros y la desproporción entre salarios y precios para los jóvenes. ¿Cree que hay otros factores, como regulación, fiscalidad, oferta de vivienda pública o problemas bancarios, que también influyen en el acceso a la vivienda? ¿O prefiere que pasemos a la siguiente pregunta?"
+        },
+        {
+          "role": "user",
+          "message": "Me gustan más estos."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, a ver si puedo concretar un poco más sobre esos puntos que le gustan. Cuando dice que le gustan más esos factores, ¿se refiere a que prioriza el problema de los precios y la falta de ingresos por encima de la regulación y la oferta..."
+        },
+        {
+          "role": "user",
+          "message": "Eso es, sí, eso es, eso es, sí."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias por confirmar. Pasamos a la siguiente pregunta: ¿Cuál es su opinión respecto a la controversia actual en Andalucía sobre las viviendas turísticas? Si no está al tanto, le puedo dar un breve contexto. ¿Qué opina?"
+        },
+        {
+          "role": "user",
+          "message": "Dame el contexto, sí."
+        },
+        {
+          "role": "agent",
+          "message": "Claro, le doy un breve contexto. En Andalucía hay un debate sobre cómo regular las viviendas de uso turístico, esas que se alquilan por días a turistas. Quienes critican las viviendas turísticas dicen que reducen la oferta de pisos para residentes, encarecen los precios en zonas céntricas y fomentan la especulación; además generan molestias en comunidades de vecinos por la rotación y el ruido. Quienes defienden su actividad apuntan que aportan ingresos a propietarios y dinamizan el turismo y la economía local, sobre todo en ciudades y zonas costeras. \n\nCon eso en mente, ¿qué impresión le merece a usted? ¿cree que son más un beneficio económico o más bien un problema para el acceso a la vivienda?"
+        },
+        {
+          "role": "user",
+          "message": "Es un beneficio económico y creo que es bueno, lo que habría que hacer es hacer que el nivel de vida de salarios de la gente suba para que permitirse un piso no sea un lujo, pero no creo que sea malo que haya pisos turísticos."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo su postura, gracias por compartirla. Lo que me dice es que valora el impacto económico positivo de las viviendas turísticas, pero que el problema de fondo es el bajo nivel salarial que dificulta el acceso a la vivienda para muchos. Anoto que las considera más un beneficio económico y que la solución que propone pasa por mejorar los salarios. Pasamos a la última pregunta temática: me gustaría conocer su valoración sobre la digitalización en Andalucía. En una escala del uno al diez, donde uno es muy deficiente y diez es excelente, ¿qué puntuación le daría al nivel actual..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "\"Pues mira, que la gente no tiene dinero, que está todo muy caro, que no para de haber pisos que digamos que son solo para extranjeros y bueno, es todo bastante complicado para los jóvenes porque su relación salario versus precio de los pisos es altísima en muchas ciudades.\"",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "\"Es un beneficio económico y creo que es bueno, lo que habría que hacer es hacer que el nivel de vida de salarios de la gente suba para que permitirse un piso no sea un lujo, pero no creo que sea malo que haya pisos turísticos.\"",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_3701k3ed13tkenhsvsv0sbny15vk",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María Jesús. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad política?"
+        },
+        {
+          "role": "user",
+          "message": "Sí, soy mayor de edad."
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Antes de empezar con las preguntas sobre temas de actualidad, necesitaría algunos datos básicos para clasificar estadísticamente sus respuestas. Para comenzar, ¿podría indicarme con qué género se identifica? (Hombre, Mujer, o lo que prefiera)."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_1601k3ecy9cafa1ss7m1aysz07yk",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de..."
+        },
+        {
+          "role": "user",
+          "message": "Sí, estoy muy acelerado."
+        },
+        {
+          "role": "agent",
+          "message": "Entiendo, no se preocupe, seré muy breve y voy al grano. Antes de empezar, ¿me puede confirmar por favor con qué género se identifica? Si prefiere no..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_1301k3ecvt3we1b9q75ek8ehkjtk",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Buen día."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad política?"
+        },
+        {
+          "role": "user",
+          "message": "Sí, seguro."
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Antes de empezar con las preguntas sobre actualidad, necesitaría algunos datos básicos..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_6601k3ec6dcyefjth8j9jb0efk66",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días, ¿hablo con un adulto mayor de edad? Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad política? ¿Le viene bien ahora?"
+        },
+        {
+          "role": "user",
+          "message": "Sí, puedo."
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Antes de empezar con las preguntas sobre actualidad, necesitaría algunos datos básicos para clasificar estadísticamente sus respuestas. Para comenzar, ¿podría indicarme con qué género se identifica? ¿Hombre, Mujer, o prefiere no especificar?"
+        },
+        {
+          "role": "user",
+          "message": "Hombre"
+        },
+        {
+          "role": "agent",
+          "message": "Gracias, lo apunto. ¿Me podría indicar en qué rango de edad se encuentra? ¿Dieciocho a treinta, treinta a cincuenta, cincuenta a sesenta o más de sesenta?"
+        },
+        {
+          "role": "user",
+          "message": ". 50 años."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias. Lo marco en el tramo de cincuenta a sesenta. ¿Y actualmente cuál es su situación laboral? ¿Trabaja por cuenta ajena,..."
+        },
+        {
+          "role": "user",
+          "message": "Soy monotributista."
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, lo indico como trabajador por cuenta propia, monotributista. Ahora una última pregunta demográfica: en términos generales, ¿con qué posición política se identificaría más: izquierda, centro-izquierda, centro, centro-derecha o derecha? También puede decir que prefiere no posicionarse."
+        },
+        {
+          "role": "user",
+          "message": "Derecha"
+        },
+        {
+          "role": "agent",
+          "message": "Perfecto, gracias por la información. Vamos con la primera pregunta sobre vivienda. Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera. (Tómese su tiempo, por favor)..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "\"Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda.\"",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_8401k3ebx13xf1nrp8cke80f5ne4",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "agent",
+          "message": "Buenos días!"
+        },
+        {
+          "role": "user",
+          "message": "Buenos días. Hola, buenos días."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad política?"
+        },
+        {
+          "role": "user",
+          "message": "Sí."
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Se lo agradezco mucho. Antes de empezar con las preguntas sobre actualidad, necesitaría algunos datos básicos para clasificar estadísticamente sus respuestas. ¿Con qué género se identifica? (puede decir izquierda, derecha, o prefiero no especificar)"
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_2601k3cty5eke1w9dck77v9r5309",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días. Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad? ¿Podría dedicarme unos cinco minutos para una breve encuesta sobre temas de actualidad..."
+        },
+        {
+          "role": "user",
+          "message": "Sí, soy mayor de edad."
+        },
+        {
+          "role": "agent",
+          "message": "¡Perfecto, muchas gracias! Antes de empezar con las preguntas sobre temas de actualidad, necesitaría algunos datos básicos para clasificar estadísticamente sus respuestas. Para comenzar, ¿podría indicarme con qué..."
+        },
+        {
+          "role": "user",
+          "message": "Interesante, ¿podemos cortar?"
+        },
+        {
+          "role": "agent",
+          "message": "Por supuesto, no hay problema. Le..."
+        },
+        {
+          "role": "agent",
+          "message": null
+        },
+        {
+          "role": "agent",
+          "message": null
+        },
+        {
+          "role": "user",
+          "message": "Hasta luego."
+        },
+        {
+          "role": "agent",
+          "message": "Ha sido un placer hablar con usted. Le deseo un excelente día. Muchas gracias por su tiempo. ¡Hasta pronto!"
+        },
+        {
+          "role": "agent",
+          "message": null
+        },
+        {
+          "role": "agent",
+          "message": null
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_9901k3ctw9vtepvvyxmpvgd8eck5",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenos días, ¿hablo con un adulto mayor de edad? Soy María González del Instituto Ibérico. Estamos realizando una breve..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_7401k3ctskhse25s3nq9hamp6a2t",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenas, ¿qué tal? Le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad?"
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    },
+    {
+      "conversation_id": "conv_6901k3ctpyr3f3crhnejk218tek9",
+      "status": "done",
+      "dialog": [
+        {
+          "role": "user",
+          "message": "Hola."
+        },
+        {
+          "role": "agent",
+          "message": "Buenas tardes, le llamo del Instituto Ibérico. Mi nombre es María González. ¿Hablo con un adulto mayor de edad? Si es así, estamos realizando una breve encuesta sobre temas de actualidad política,..."
+        },
+        {
+          "role": "user",
+          "message": "Sí, por favor."
+        },
+        {
+          "role": "agent",
+          "message": "Estupendo, muchas gracias. Estamos realizando..."
+        }
+      ],
+      "analysis": {
+        "pregunta_1": {
+          "tema": "problemas_acceso_vivienda",
+          "pregunta": "Puede enumerar todos los problemas que considera que existen respecto al acceso actual a la vivienda. Puede mencionar tantos como quiera.",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_2": {
+          "tema": "viviendas_turisticas_andalucia",
+          "pregunta": "¿Cuál es su opinión respecto a la controversia actual en Andalucía respecto a las viviendas turísticas?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        },
+        "pregunta_3": {
+          "tema": "digitalizacion_andalucia",
+          "pregunta": "En una escala del 1 al 10, donde 1 es muy deficiente y 10 es excelente, ¿cuál es el actual nivel que considera que tiene Andalucía respecto a la digitalización y por qué?",
+          "respuesta_extraida": "No se encontró respuesta específica.",
+          "status": "success"
+        }
+      }
+    }
+  ]
+}
